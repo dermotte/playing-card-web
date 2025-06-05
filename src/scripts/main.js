@@ -6,7 +6,7 @@ const personas = [
   "Delivery Driver (Food/Packages)",
   "Construction Worker",
   "Tour Guide",
-  "Healthcare Worker (Home Visit Nurse)",
+  "Home Visit Nurse",
   "Elderly Person (using a rideshare service)",
   "Long-Haul Truck Driver",
   "Musician/Band (traveling to gigs)",
@@ -33,12 +33,13 @@ const personas = [
   "Real Estate Agent showing Properties",
   "Dog Walker",
   "Hiking Guide",
-  "Motorcycle Scenery Photographer",
+  "Motorcycle Tourist",
   "Scooter Repair Technician",
-  "Skateboarder commuting",
-  "Roller Skater (Recreational)",
+  "Skateboarder",
+  "Roller Skater",
   "Mobility Scooter User",
   "Pilgrim/Religious Walker",
+  "Taxi Driver"
 ]
 
 const modes = [
@@ -50,14 +51,14 @@ const modes = [
   "Segways",
   "Monocycles",
   "Vintage Cars (Restored)",
-  "Adapted Vans (Wheelchair Accessible)",
+  "Camping Vans",
   "Golf Carts",
   "ATVs (All-Terrain Vehicles)",
   "Snowmobiles",
-  "Boats (Sailboats, Motorboats)",
+  "Sailboats",
   "Jet Skis",
   "Cable Cars",
-  "Rickshaws (Pedal-Powered)",
+  "Rickshaws",
   "Tuk-Tuks",
   "Hovercrafts",
   "Ziplines",
@@ -70,7 +71,7 @@ const modes = [
   "Gravel Bikers",
   "Hikers",
   "Motorcycles",
-  "Scooters (Electric)",
+  "Electric Scooters",
   "Skateboarders",
   "Roller Skaters",
   "Mobility Scooter Users",
@@ -87,7 +88,7 @@ const modes = [
   "Carpooling",
   "Car Rentals",
   "Ride-Sharing Services",
-  "Public Transit (Buses, Trams)",
+  "Public Transit",
   "Walking",
   "Running",
   "Electric Skateboards",
@@ -95,12 +96,24 @@ const modes = [
   "Pedal Boats",
 ]
 
+
+
+let personas_order = [];
+let personas_idx = 0;
+let templates_idx = 0;
+
 function getRandomCard() {
-    const randomIndex = Math.floor(Math.random() * personas.length);
-    let p = personas[randomIndex];
+    let p = personas[personas_order[personas_idx]];
+    personas_idx = (personas_idx+1)%personas_order.length
     const modeIndex = Math.floor(Math.random() * modes.length);
     let m = modes[modeIndex];
-    return "You are a " + p + ".<br/>What do you think about " + m + "?";
+    const templates = [
+        `Channel your inner ${p}.<br/>Deliver a one-sentence quote on ${m}.` ,
+        `Role: ${p}. Topic: ${m}. One-sentence quote please.` ,
+        `As a ${p}, give us a one-sentence quote on ${m}.` ,
+    ]
+    let result = templates[templates_idx++%templates.length] 
+    return result;
 }
 
 function updateCard() {
@@ -117,6 +130,25 @@ function updateCard() {
         cardElement.classList.remove('fade-in');
     }, 600); // Duration of fade-in animation
 }
+
+/**
+ * Shuffles an array of numbers from 0 to n-1 in random order.
+ *
+ * @param {number} n The upper bound of the range of numbers to shuffle (exclusive).
+ * @returns {number[]} An array containing the numbers from 0 to n-1 in random order.
+ */
+function shuffle(n) {
+  const arr = Array.from({ length: n }, (_, i) => i); // Create an array from 0 to n-1
+  for (let i = n - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1)); // Generate a random index from 0 to i
+    [arr[i], arr[j]] = [arr[j], arr[i]]; // Swap elements at index i and j
+  }
+  return arr;
+}
+
+// init code
+personas_order = shuffle(personas.length)
+personas_idx = 0
 
 document.getElementById('drawCardButton').addEventListener('click', updateCard);
 
