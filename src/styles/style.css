@@ -1,0 +1,80 @@
+body {
+    font-family: 'Edu SA Hand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.card {
+    width: 400px;
+    height: 600px;
+    border: 6px solid #ccc;
+    border-radius: 10px;
+    margin: 6px;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.8s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card-text {
+    font-size: 2.5em;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.card-text.fade-out {
+    opacity: 0;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/*
+@media (max-width: 768px) {
+    .card {
+        width: 150px;
+        height: 225px;
+    }
+
+    .card-text {
+        font-size: 1.5em;
+    }
+
+    .button {
+        font-size: 0.9em;
+    }
+}*/
