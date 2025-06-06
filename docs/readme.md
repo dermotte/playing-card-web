@@ -42,7 +42,7 @@ Everyone will now embody the *same* **Role** and deliver a quote on the *same* *
 
 ## Scoring & Winning
 
-1.  **Best Quote Wins!** After all quotes are read, players discuss and vote on which quote was the **best** for that round. Consider creativity, humor, and how well the quote matched the role, topic, and emoji.
+1.  **Best Quote Wins!** After all quotes are read, players discuss and vote on which quote was the **best** for that round. Consider how well the quote matched the role, topic, and emoji.
 2.  **Keep the Emoji:** The player who gave the winning quote gets to **keep the emoji card** from that round! This is how you track your score.
 3.  **New Emoji, New Round:** The winner then draws a *new* emoji card for themselves for the next round.
 4.  **Pass the Emotions:** At the end of each round (after the winner is declared), all players (except the winner) **pass their emoji cards clockwise** to the next player. This ensures everyone gets a new emotional challenge each round.
@@ -50,6 +50,10 @@ Everyone will now embody the *same* **Role** and deliver a quote on the *same* *
 ## Game End
 
 Play for a set number of rounds, or until everyone has had a chance to be the game master a few times. The player with the **most emoji cards** at the end of the game is crowned the ultimate **Quote Master**!
+
+## Possible Twists
+
+Consider giving the winners an extra advantage. In an alternative setting, they can choose which of the scored emotions they want to use. So if you won two rounds already, you can choose between the card you've drawn, and the two emojis, you scored. 
 
 ---
 

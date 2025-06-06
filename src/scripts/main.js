@@ -13,7 +13,7 @@ const personas = [
   "Event Planner",
   "Veterinarian on Emergency Call-Out",
   "Wedding Photographer",
-  "Remote Worker traveling to a meetings",
+  "Remote Worker traveling to a meeting",
   "Agricultural Worker walking to the fields",
   "Moving Company Employee",
   "Ride-Share Driver",
@@ -40,7 +40,9 @@ const personas = [
   "Mobility Scooter User",
   "Pilgrim/Religious Walker",
   "Taxi Driver",
-  "Farmer"
+  "Farmer",
+  "Donald Trump",
+  "Elon Musk",
 ]
 
 const modes = [
@@ -101,13 +103,17 @@ const modes = [
 
 let personas_order = [];
 let personas_idx = 0;
+
+let modes_order = [];
+let modes_idx = 0;
+
 let templates_idx = 0;
 
 function getRandomCard() {
     let p = personas[personas_order[personas_idx]];
     personas_idx = (personas_idx+1)%personas_order.length
-    const modeIndex = Math.floor(Math.random() * modes.length);
-    let m = modes[modeIndex];
+    let m = modes[modes_order[modes_idx]];
+    modes_idx = (modes_idx+1)%modes_order.length
     const templates = [
         `Channel your inner ${p}.<br/>Deliver a one-sentence quote on ${m}.` ,
         `Role: ${p}. Topic: ${m}. One-sentence quote please.` ,
@@ -150,6 +156,8 @@ function shuffle(n) {
 // init code
 personas_order = shuffle(personas.length)
 personas_idx = 0
+modes_order = shuffle(modes.length)
+modes_idx = 0
 
 document.getElementById('drawCardButton').addEventListener('click', updateCard);
 
