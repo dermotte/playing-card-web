@@ -2,7 +2,9 @@
 
 This project is a simple web application that displays a single playing card and allows users to draw a new card by clicking a button. The card's text changes randomly from a predefined array of values, providing an interactive experience. The application is built using HTML, CSS, and JavaScript, and is styled with Bootstrap for responsiveness.
 
-Find it at https://dermotte.github.io/playing-card-web/src/
+Find the cards at https://dermotte.github.io/playing-card-web/src/
+
+How to play and the printable emoji cards are available in [[docs/readme.md]]
 
 ## Project Structure
 
