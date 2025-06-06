@@ -39,7 +39,8 @@ const personas = [
   "Roller Skater",
   "Mobility Scooter User",
   "Pilgrim/Religious Walker",
-  "Taxi Driver"
+  "Taxi Driver",
+  "Farmer"
 ]
 
 const modes = [

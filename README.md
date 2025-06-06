@@ -2,6 +2,8 @@
 
 This project is a simple web application that displays a single playing card and allows users to draw a new card by clicking a button. The card's text changes randomly from a predefined array of values, providing an interactive experience. The application is built using HTML, CSS, and JavaScript, and is styled with Bootstrap for responsiveness.
 
+Find it at https://dermotte.github.io/playing-card-web/src/
+
 ## Project Structure
 
 ```
@@ -12,7 +14,6 @@ playing-card-web
 │   │   └── style.css     # CSS styles for the web page
 │   └── scripts
 │       └── main.js       # JavaScript logic for card drawing
-├── package.json          # npm configuration file
 └── README.md             # Project documentation
 ```
 
@@ -26,13 +27,7 @@ To run this project locally, follow these steps:
    cd playing-card-web
    ```
 
-2. **Install dependencies**:
-   Make sure you have Node.js installed. Then run:
-   ```bash
-   npm install
-   ```
-
-3. **Open the project**:
+2. **Open the project**:
    Open `src/index.html` in your web browser to view the application.
 
 ## Features
