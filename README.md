@@ -4,7 +4,7 @@ This project is a simple web application that displays a single playing card and
 
 Find the cards at https://dermotte.github.io/playing-card-web/src/
 
-How to play and the printable emoji cards are available in [[docs/readme.md]]
+How to play and the printable emoji cards are available in [Give Me a Quote: The Game of Witty Wisdom!](docs/readme.md)
 
 ## Project Structure
 

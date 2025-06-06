@@ -1,14 +1,17 @@
 # Give Me a Quote: The Game of Witty Wisdom!
-
+Author: Mathias Lux
+Date: June 6, 2025
 ---
 
 Get ready to unleash your inner actor and wordsmith in this fun, fast-paced game of imaginative quotes! **Give Me a Quote** is perfect for **2-16 players** aged **10 and up** looking for a creative challenge.
 
 ## What You'll Need
 
-* **Emoji Cards:** Print and cut out the emoji cards you can find at [[emojis.html]].
-* **Quote Generator:** One computer or smartphone with the webpage `https://dermotte.github.io/playing-card-web/src/` open. This will generate your role and topic for each round.
+* **Emoji Cards:** Print and cut out the emoji cards you can find at [emojis.hml](emojis.html).
+* **Quote Generator:** One computer or smartphone with the webpage https://dermotte.github.io/playing-card-web/src/ open. This will generate your role and topic for each round.
 * **Pen & Paper:** Each player needs a pen and a piece of paper to write down their brilliant quotes.
+
+![QR Code to the Cards](qrcode-cards.png)
 
 ## Getting Started
 
@@ -19,7 +22,7 @@ Get ready to unleash your inner actor and wordsmith in this fun, fast-paced game
 
 ### 1. Generate the Prompt
 
-The player whose turn it is (or a designated game master) will "draw a card" on the `https://dermotte.github.io/playing-card-web/src/` webpage. This will give everyone a **Role** and a **Topic**.
+The player whose turn it is (or a designated game master) will "draw a card" on the https://dermotte.github.io/playing-card-web/src/ webpage. This will give everyone a **Role** and a **Topic**.
 
 * **Examples:**
     * "Channel your inner **Agricultural Worker** walking to the fields. Deliver a one-sentence quote on **Golf Carts**."
