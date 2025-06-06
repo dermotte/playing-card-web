@@ -1,6 +1,8 @@
 # Give Me a Quote: The Game of Witty Wisdom!
+
 - Author: Mathias Lux
 - Date: June 6, 2025
+
 ---
 
 Get ready to unleash your inner actor and wordsmith in this fun, fast-paced game of imaginative quotes! **Give Me a Quote** is perfect for **2-16 players** aged **10 and up** looking for a creative challenge.
